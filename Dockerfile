@@ -9,3 +9,5 @@ RUN apt-get update &&\
 RUN mkdir -p /opt/openxenmanager
 COPY . /opt/openxenmanager
 RUN cd /opt/openxenmanager && python setup.py install
+
+CMD openxenmanager
