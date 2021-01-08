@@ -39,6 +39,16 @@ pip install raven
 OpenXenManager runs has been tested to run on Linux or Windows and should work
 on MacOSX as well.
 
+Running OpenXenManager in Docker
+================================
+
+Build:
+
+    docker build -t openxenmanger .
+
+Run:
+
+    docker run --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix openxenmanager openxenmanager
 
 Help / bug reports
 ==================
